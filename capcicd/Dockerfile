@@ -1,7 +1,7 @@
 FROM node:12-slim
 
 WORKDIR /usr/src/app
-COPY /. .
+COPY /. /usr/src/app
 RUN npm install
 
 EXPOSE 4004
