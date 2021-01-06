@@ -2,25 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: capcicd
-  labels:
-    app: capcicd
-    version: v1
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: capcicd
-      version: v1
   template:
     metadata:
       labels:
         app: capcicd
-        version: v1
     spec:
       containers:
       - name: capcicd
-        image: gopalanand/capcicd
-        imagePullPolicy: Always
+        image: gopalanand/nodeservice
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
         ports:
         - containerPort: 4004
 ---
