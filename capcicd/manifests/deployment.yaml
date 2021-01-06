@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: capcicd
-        image: gopalanand/nodeservice
+        image: gopalanand/capcicd
         resources:
           limits:
             memory: "128Mi"
