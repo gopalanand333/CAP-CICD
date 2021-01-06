@@ -1,5 +1,5 @@
 # Getting Started
-
+![Docker Image CI](https://github.com/gopalanand333/kubenetues/workflows/Docker%20Image%20CI/badge.svg)
 Welcome to your new project.
 
 It contains these folders and files, following our recommended project layout:
