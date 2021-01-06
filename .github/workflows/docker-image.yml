@@ -32,8 +32,9 @@ jobs:
         kubeconfig: ${{secrets.KYMA}}
     
     - name: Build the Docker image
-      run: 
+      run: |
         docker build -t gopalanand/capcicd -f /Dockerfile .
+
         docker push gopalanand/capcicd
         kubectl apply -f ./capcicd/manifests/deployment.yaml
             
