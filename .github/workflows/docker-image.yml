@@ -33,7 +33,7 @@ jobs:
     
     - name: Build the Docker image
       run: 
-        docker build ./capcicd --file Dockerfile --tag gopalanand/capcicd
+        docker build ./capcicd --file Dockerfile --tag gopalanand/capcicd .
         docker push gopalanand/capcicd
         kubectl apply -f ./capcicd/manifests/deployment.yaml
             
