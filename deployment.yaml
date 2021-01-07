@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: capcicd
-        image: gopalanand/capcicd
+        image: gopalanand/capcicd:latest
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
