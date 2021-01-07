@@ -36,5 +36,6 @@ jobs:
         docker build -t gopalanand/capcicd -f ./Dockerfile .
 
         docker push gopalanand/capcicd:latest
+        
         kubectl apply -f ./deployment.yaml --namespace=gopal
             
