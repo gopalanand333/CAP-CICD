@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker build and deploy to KYMA
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
         # Kubernetes Config
         kubeconfig: ${{secrets.KYMA}}
     
-    - name: Build the Docker image
+    - name: Build the Docker image and Deploy to Kyma
       run: |
         docker build -t gopalanand/capcicd -f ./Dockerfile .
 
