@@ -14,3 +14,5 @@ This simple bookshop application triggers a github action to build docker image 
 4. Change `image: gopalanand/capcicd:latest` to your user in deployment.yaml with your user.
 
 No push the changes and see the magic.
+.
+..
