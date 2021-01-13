@@ -15,4 +15,4 @@ This simple bookshop application triggers a github action to build docker image 
 
 No push the changes and see the magic.
 .
-..
+...
