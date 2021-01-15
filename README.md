@@ -1,4 +1,4 @@
-# CAP CICD
+# CAP CI/CD
 
 ![Docker build and deploy to KYMA](https://github.com/gopalanand333/CAP-CICD/workflows/Docker%20build%20and%20deploy%20to%20KYMA/badge.svg)
 
